@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'ledger';
+}
+
+
+body {
+  background-color: #f5f6fa;
+}
+
+.title{
+  font-size: 1.5rem;
+  text-align: center;
+  margin:1rem;
+  width:100%;
+}
+
+@media (max-width:420px) {
+  .title {
+    width:80%;
+    margin:1rem auto;
+  }
+}
+
+.app {
+  overflow-x:hidden;
+}
+
+.mainContent {
+  display:flex;
+  flex-direction:row;
+}
+
+.mainContent::after {
+  clear:both;
+}
+
+.mainTable {
+  width:400px;
+  padding:1rem;
+  position:fixed;
+  right:0;
+}
+
+.selectCases {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+/* @media (max-width:1000px) */
+
+.selectCases p{
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.focusSelectedCases {
+  background-color: #cc1034;
+} 
+
+.selectCases p:hover{
+  cursor:pointer;
+  background-color: red;
+}
+
+.mapAndInfox {
+  width:70%;
+  /* background:blue; */
+  margin-right: 1rem;
+}
+
+.mapAndInfox h2{
+  text-align:center;
+  margin:1rem;
+  margin-top:2rem;
+  font-weight: 200;
+}
+
+@media (min-width:1101px) {
+  .app {
+    margin:auto 2rem;
+  }
+  .mapAndInfox {
+    width: 65%;
+  }
+
+  .mainTable {
+    right:1rem;
+    width:30%;
+  }
+
+}
+
+@media (max-width:1100px) {
+  .mapAndInfox {
+    width:68%;
+  }
+
+  .mainTable {
+    width:320px;
+  }
+}
+
+@media (max-width:950px) {
+  .mainTable {
+    width:300px;
+  }
+
+  .mapAndInfox {
+    width:65%;
+  }
+
+  .selectCases{
+    margin-left:1rem;
+  }
+}
+
+@media (max-width:800px) {
+  .mapAndInfox {
+    width:63%;
+  }
+}
+
+@media (max-width:768px) {
+  .mapAndInfox {
+    margin:auto;
+    width:100%;
+  }
+}
+
+.appStats {
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+}
+
+.title h1 {
+  text-align:center;
+}
+
+.selectCountryResponsive {
+  display: flex;
+  justify-content: center;
+  
+  /* background-color: white; */
+}
+
+.app__header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
+}
+
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
